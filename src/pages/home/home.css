@@ -1,0 +1,224 @@
+/* ****************home part 1 css ********************* */
+.part-1-header {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 63.984px;
+  color: #34c995;
+  background: var(
+    --avegen-brand-gradients-cyan-aquarium,
+    linear-gradient(90deg, #34c995 0%, #30bced 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-border {
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
+  border: 1px solid #34c995 !important;
+  border-radius: 10px !important;
+  transition: all 0.5s ease;
+}
+.card-border:hover {
+  width: 100%;
+  height: 100%;
+  box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
+    1px 6px 12px rgba(39, 44, 49, 0.04);
+  transform: translate3D(0, -1px, 0) scale(1.08);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.card-1-para {
+  color: var(--avegen-brand-dark-grey-ebony-clay, #21283c);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+ /* ****************home part 2 css ******************* */
+.part-2 {
+  background: linear-gradient(180deg, #edf4f9 0%, rgba(255, 255, 255, 0) 100%);
+}
+.part-2-header-1{
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 43px;
+    color: #37BEBB;
+    text-align: center;
+    }
+.part-2-header-2{
+font-family: Poppins;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 800;
+line-height: 43px;
+color:#21283C
+}
+#slider-1 .slick-dots{
+   position: absolute;
+   transform: translateY(300%);
+   color: #34c995;
+  }
+  
+  /* ****************home part 3 css ******************* */
+.part-3 {
+  background: var(
+    --avegen-brand-overlay-light-gradient,
+    linear-gradient(
+      90deg,
+      rgba(52, 201, 149, 0.3) 0%,
+      rgba(48, 188, 237, 0.3) 100%
+    )
+  );
+}
+.part-3-header {
+  color: var(--avegen-brand-dark-grey-ebony-clay, #21283c);
+
+  font-family: Poppins;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.image-slider {
+  max-width: 100%;
+  height: auto;
+}
+
+.questions-items {
+  position: relative;
+  padding: 13px;
+  margin: 10px 0;
+  background-color: white;
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.questions-items.active .progress-bar {
+  height: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 15px;
+}
+.questions-items.inactive {
+  opacity: 0.7;
+  background: white;
+  font-weight: 300;
+  color: #ccc;
+}
+
+
+.questions-items.active .progress-bar {
+  background-color: #34c995;
+  border-radius: 10px 10px 0 0;
+  animation: progressBarAnimation 5s linear forwards;
+}
+
+@keyframes progressBarAnimation {
+  from {
+    width: 0;
+    transition: width 5s linear;
+  }
+  to {
+    width: 100%;
+    transition: width 0.2s linear;
+  }
+}
+/* ***********************home part 4 css************************ */
+.part-4{
+    background: var(--avegen-brand-overlay-dark-gradient, linear-gradient(90deg, rgba(52, 201, 149, 0.70) 0%, rgba(48, 188, 237, 0.70) 100%));
+}
+.part-4-header{
+  font-family: Poppins;
+font-size: 3rem;
+font-style: normal;
+font-weight: 700;
+line-height: 63.984px;
+color: #FFF;
+}
+
+#slider-2{
+    position: relative;
+}
+#slider-2 .slick-dots{
+    position: absolute;
+    transform: translateY(-1000%) rotate(-90deg);
+    left: -340px;
+    color: #34c995;
+   }
+   .slide {
+    opacity: 0.5;
+    transition: opacity 0.5s; 
+    border-radius: 20px;
+    background: white;
+    padding: 10px;
+    
+  }
+  .slide.active {
+    opacity: 1; 
+    box-shadow: 0px 25px 55px 0px rgba(126, 126, 126, 0.15);
+
+  }
+ 
+
+  @media (max-width: 990px) {
+    .part-1-header{
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 53.984px;
+    }
+    .part-3-header{
+      font-size: 2.4rem;
+font-weight: 600;
+line-height: 53.984px;
+    }
+    #slider-2{
+        position: relative;
+    }
+    #slider-2 .slick-dots{
+        position: absolute;
+        transform: translateX(50%) rotate(-180deg);
+        color: #34c995;
+       }
+  }
+@media (max-width: 568px) {
+  .part-1-header{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 38.984px;
+  }
+  .part-3-header{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 38.984px;
+  }
+    #slider-1 .slick-dots{
+        position: absolute;
+        transform: translateY(600%);
+        color: #34c995;
+       }
+       #slider-2{
+        position: relative;
+    }
+    #slider-2 .slick-dots{
+        position: absolute;
+        transform: translateX(100%) rotate(-180deg);
+        color: #34c995;
+       }
+  
+  }
